@@ -17,5 +17,5 @@
 底座阶段 verified：24项默认特性测试、20项最小特性测试、全部特性cargo check、fmt与Clippy通过；admin-tool消费示例编译通过。只修复特性门禁和两处Clippy等价写法；旧sdkit-rs未修改。统一模板不带Vue源码，可选Web后端配套独立admin-lite。
 
 最终范围：sdbase-rust为单仓模板，默认CLI，可选server、sse、embed-web，不带Vue源码。现有独立admin-lite兼容账户契约，配套说明保留在其工作区；未知功能改动未提交。旧项目未切换。
-Git交付：两个私有GitHub仓库均已推送main与v0.1.0；底座tag对应f9e8c883e0d238298a44c0668e442a88fd7459f8，模板tag对应6d9fbdb37464c82a4fda3bfbf82228d0f2ea66c5。底座CI成功，模板CI自动运行中。只读底座deploy key与模板secret已配置，临时私钥已删除。
+Git交付：两个私有GitHub仓库均已推送main与v0.1.0；底座tag对应f9e8c883e0d238298a44c0668e442a88fd7459f8，模板tag对应6d9fbdb37464c82a4fda3bfbf82228d0f2ea66c5。底座CI成功，模板CI 39268554160已成功（Linux make check和make verify-runtime）。只读底座deploy key与模板secret已配置，临时私钥已删除。
 模板验证：CLI/server/sse格式、Clippy与测试；真实本地登录与SSE推送/断线重连/会话撤销/进程关闭/重启；admin-lite固定版本13项测试、开发代理与实际嵌入页面；生成项目改名与CLI打包均通过。
