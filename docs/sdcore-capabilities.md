@@ -110,7 +110,7 @@ SQLite 是默认数据库能力，适合本地工具、单实例后台和轻量�
 `postgres` feature 提供 PostgreSQL 连接抽象：
 
 ```toml
-sdcore = { git = "ssh://git@github.com/huwenlong92/sdkit-rust.git", tag = "v0.1.0", features = ["postgres"] }
+sdcore = { git = "https://github.com/huwenlong92/sdkit-rust.git", tag = "v0.1.0", features = ["postgres"] }
 ```
 
 注意：这只是底层连接能力。业务项目是否能切到 PostgreSQL，取决于业务 repository、SQL 方言、迁移和事务逻辑是否已经适配。
