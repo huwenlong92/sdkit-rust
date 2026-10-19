@@ -1,0 +1,12 @@
+[package]
+name = "admin-tool"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+axum = "0.8"
+sdcore = { path = "../../crates/sdcore" }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
